@@ -1,0 +1,97 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-ivory: #F7F5F0;
+    --bg-ivory-card: #FFFFFF;
+    --bg-charcoal: #0B1118;
+    --bg-charcoal-card: #131B26;
+    
+    --ayyan-navy: #0A192F;
+    --ayyan-gold: #C9A227;
+    --ayyan-gold-light: #E5C358;
+    --tech-cyan: #16B8D4;
+    
+    --text-dark-primary: #0B1118;
+    --text-dark-secondary: #4A5568;
+    --text-dark-muted: #718096;
+    
+    --text-light-primary: #F7F5F0;
+    --text-light-secondary: #94A3B8;
+    --text-light-muted: #64748B;
+  }
+}
+
+body {
+  background-color: var(--bg-charcoal);
+  color: var(--text-light-primary);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Plus Jakarta Sans', 'Inter', Roboto, Oxygen, Ubuntu, sans-serif;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+/* Custom Scrollbar - Refined & Minimal */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0B1118;
+}
+::-webkit-scrollbar-thumb {
+  background: #2D3748;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #C9A227;
+}
+
+/* Luxury Editorial Utilities */
+.text-gold {
+  color: #C9A227;
+}
+
+.text-gold-gradient {
+  background: linear-gradient(135deg, #F3E5AB 0%, #C9A227 60%, #9B7811 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-cyan {
+  color: #16B8D4;
+}
+
+.text-cyan-gradient {
+  background: linear-gradient(135deg, #E0F2FE 0%, #16B8D4 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.bg-ivory-section {
+  background-color: #F7F5F0;
+  color: #0B1118;
+}
+
+.bg-charcoal-section {
+  background-color: #0B1118;
+  color: #F7F5F0;
+}
+
+.shadow-editorial {
+  box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.07);
+}
+
+.shadow-editorial-dark {
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+}
+
+.border-subtle-gold {
+  border: 1px solid rgba(201, 162, 39, 0.2);
+}
+
+.border-subtle-dark {
+  border: 1px solid rgba(226, 232, 240, 0.8);
+}
+
+.border-subtle-light {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
